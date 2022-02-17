@@ -2,5 +2,5 @@
 
 int main()
 {
-    std :: cout << "segin" ;
+    std :: cout << "HelloWorld" << std :: endl;
 }
