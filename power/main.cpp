@@ -28,4 +28,6 @@ void power (int base,int exponent)
     
     cout << power << endl;
     cout << endl;
+    cout << "test" << endl;
+    
 }
