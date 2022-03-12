@@ -25,9 +25,8 @@ void power (int base,int exponent)
     {
         power = power * base;
     }
-    
+    cout << "power = ";
     cout << power << endl;
-    cout << endl;
-    cout << "test" << endl;
+
     
 }
