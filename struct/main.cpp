@@ -1,43 +1,38 @@
 # include <iostream>
+# include <string>
 
-using std :: cout;
-using std :: endl;
+    using std :: string;
+    using std :: cout;
+    using std :: endl;
 
-struct Rectangle
+
+struct User
 {
-    double length;
-    double width;
+    string firstName;
+    string secondName;
+    string thirdName;
+    
+    string getStatus()
+    {
+        
+        membership = "gold";
+        return membership;
+    }
+
+    private:
+        string membership;
+
 };
 
-double area (double length, double width)
+int main()
 {
-    return length * width;
-}
-double area (double length)
-{
-    return length * length;
-}
+    User userOne;
 
-double pow (double base, int pow = 2)
-{
-    int total = 1;
+    userOne.firstName = "Monkey";
+    userOne.secondName = "D";
+    userOne.thirdName = "Luffy";
+    
 
-    for (int i = 0; i < pow; i++ )
-    {
-        total = total * base;
-    }
-    return total;
-}
-
-
-int main ()
-{
-    // Rectangle myRectangle;
-    // myRectangle.length = 2;
-    // myRectangle.width = 10;
-    // cout << area(myRectangle.length) << endl;
-
-    cout << pow(3,3) << endl;
-    return 0;
-
+    cout << userOne.getStatus() << endl;
+    
 }
