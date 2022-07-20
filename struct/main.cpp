@@ -24,6 +24,7 @@ struct User
 
 };
 
+
 int main()
 {
     User userOne;
@@ -32,7 +33,6 @@ int main()
     userOne.secondName = "D";
     userOne.thirdName = "Luffy";
     
-
     cout << userOne.getStatus() << endl;
     
 }
