@@ -1,9 +1,13 @@
 # include <iostream>
 # include <string>
+# include <vector>
 
+    using std :: vector;
     using std :: string ;
     using std :: cout;
     using std :: endl;
+
+
 
 class User
 {
@@ -27,10 +31,8 @@ int main ()
     User userOne;
 
     userOne.firstName = "monkey";
-    userOne.secondName = "D";
-    userOne.thirdName = "luffy";
-
-    cout << userOne.getStatus() << endl;
+    
+    cout << userOne.firstName << endl;
 
 
 }
