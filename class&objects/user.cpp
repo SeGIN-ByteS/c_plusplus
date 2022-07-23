@@ -1,9 +1,6 @@
-# include <iostream>
-# include "user.h"
 
-    using std :: string;
-    using std :: cout, std :: endl, std :: cin;
-    using std :: istream, std :: ostream;
+# include "user.h"
+# include "teacher.h"
 
 
 User :: User()
@@ -29,6 +26,11 @@ void User :: setStatus(string status)
         userStatus = status;
     }
 
+}
+
+void User :: output()
+{
+    cout << "i am a user\n";
 }
 
 string User :: getStatus(void)

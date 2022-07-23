@@ -1,5 +1,5 @@
 main: main.cpp user.cpp
-	g++ main.cpp user.cpp -o main
+	g++ main.cpp user.cpp teacher.cpp -o main
 
 clean:
 	rm main 

@@ -2,10 +2,19 @@
 
 # define USER
 
+# include <iostream>
+# include <ostream>
+# include <istream>
+# include <vector>
+
+
+    using std :: cout;
+    using std :: cin;
     using std :: endl;
+    using std :: vector;
     using std :: string;
-    using std :: cout, std :: cin;
-    using std :: ostream, std:: istream;
+    using std :: ostream;
+    using std :: istream;
     
 
 class User
@@ -23,7 +32,7 @@ class User
 
         User();
         ~User();
-
+        virtual void output ();
         string getStatus(void);     
         void setStatus(string status);     
 

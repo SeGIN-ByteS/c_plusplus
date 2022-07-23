@@ -1,35 +1,38 @@
-# include <iostream>
-# include "user.h"
 
-    using std :: cout;
-    using std :: cin;
-    using std :: endl;
+# include "user.h"
+# include "teacher.h"
+
 
 int main()
 {
-    User user,user1,user2,user3,user4;
+    // User user,user1,user2,user3,user4;
 
-    user.firstName = "Monkey";
-    user.secondName = "D";
-    user.lastName = "Luffy";
-    user.setStatus("gold");
+    // // cin >> user;
 
-    cin >> user;
-    cout << user << endl;
-    
-    // cout << user.getStatus() << endl;
+    // Teacher teacher1;
+
+    // teacher1.firstName = "Donald";
+    // teacher1.secondName = "Ervin";
+    // teacher1.lastName = "Knuth";
+
+    // user.firstName = "Monkey";
+    // user.secondName = "D";
+    // user.lastName = "Luffy";
+
+
+    // cout << teacher1 << endl;
+
+    // cout << user << endl;
+
     // cout << User :: getUserCount() << endl;
 
+    User u1;
+    Teacher teacher;
 
-    
-    
+    User& u = teacher;
+    u1.output();
+    u.output();
+
 }
-
-
-
-// TODO constructors and deconstructors
-// TODO friend functions
-// TODO getters and setters
-// TODO static data
 
 
