@@ -1,4 +1,4 @@
-# ifndef USER
+# ifndef USER  // pre processor derctive 
 
 # define USER
 
@@ -24,12 +24,12 @@ class User
         User();
         ~User();
 
-        string getStatus(void);
-        void setStatus(string status);
-        
-        static int getUserCount();
+        string getStatus(void);     
+        void setStatus(string status);     
 
-        friend ostream& operator << (ostream& output, User &user);
+        static int getUserCount();         
+
+        friend ostream& operator << (ostream& output, User &user);      
         friend istream& operator >> (istream& input, User &user);
 
 };
